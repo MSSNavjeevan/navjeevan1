@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAV Jeevan</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
+</head>
+<body>
+
+    <header>
+        <h1>NAV Jeevan</h1>
+    </header>
+
+    <div class="nav-options">
+        <a href="#" id="cart-option">Cart</a>
+        <a href="#" id="available-products-option">Available Products</a>
+        <a href="#" id="buyer-interface">Buyer Interface</a>
+    </div>
+
+    <div class="container plants-background">
+        <!-- Seller Login Section -->
+        <div class="form-section" id="login-section">
+            <h2>Sign Up / Login (Sellers)</h2>
+            <label for="username">Username or Mobile Number</label>
+            <input type="text" id="username" placeholder="Enter username or mobile number">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password">
+
+            <input type="submit" value="Login" id="seller-login-btn">
+        </div>
+
+        <!-- Product Section for Sellers -->
+        <div class="form-section" id="seller-product-section">
+            <h2>Seller Product Details</h2>
+            <label for="address">Seller Address</label>
+            <input type="text" id="address" placeholder="Enter address (House no, Landmark, etc.)">
+
+            <label for="pin">Pincode</label>
+            <input type="number" id="pin" placeholder="Enter pincode">
+
+            <label for="product-type">Product Type</label>
+            <select id="product-type">
+                <option value="kg">KG</option>
+                <option value="unit">Per Unit</option>
+            </select>
+
+            <label for="product-name">Product Name</label>
+            <input type="text" id="product-name" placeholder="Enter product name">
+
+            <label for="product-quantity">Product Quantity</label>
+            <input type="number" id="product-quantity" placeholder="Enter product quantity">
+
+            <input type="submit" value="Submit Product" id="submit-product-btn">
+        </div>
+
+        <!-- Buyer Interface -->
+        <div class="form-section" id="buyer-interface-section" style="display:none;">
+            <h2>Buyer Login</h2>
+            <label for="buyer-username">Username or Mobile Number</label>
+            <input type="text" id="buyer-username" placeholder="Enter buyer username or mobile number">
+
+            <label for="buyer-password">Password</label>
+            <input type="password" id="buyer-password" placeholder="Enter buyer password">
+
+            <input type="submit" value="Login" id="buyer-login-btn">
+
+            <!-- Cart Section -->
+            <div id="cart-section" style="display:none;">
+                <h3>Your Cart</h3>
+                <ul id="cart-items">
+                    <!-- Cart items will be displayed here -->
+                </ul>
+
+                <label for="buyer-address">Buyer Address</label>
+                <input type="text" id="buyer-address" placeholder="Enter your address">
+
+                <label for="buyer-pin">Pincode</label>
+                <input type="number" id="buyer-pin" placeholder="Enter your pincode">
+
+                <!-- Payment Section -->
+                <h3>Payment Options</h3>
+                <label for="buyer-payment-method">Select Payment Method</label>
+                <select id="buyer-payment-method">
+                    <option value="cod">Cash on Delivery</option>
+                    <option value="upi">UPI</option>
+                    <option value="credit-card">Credit Card</option>
+                </select>
+
+                <!-- Credit Card Details -->
+                <div id="buyer-credit-card-details" style="display:none;">
+                    <label for="buyer-card-name">Card Name</label>
+                    <input type="text" id="buyer-card-name" placeholder="Enter name on card">
+
+                    <label for="buyer-card-number">Card Number</label>
+                    <input type="number" id="buyer-card-number" placeholder="Enter card number">
+
+                    <label for="buyer-cvv">CVV</label>
+                    <input type="number" id="buyer-cvv" placeholder="Enter CVV">
+
+                    <label for="buyer-expiry">Expiry Date (MM/YY)</label>
+                    <input type="text" id="buyer-expiry" placeholder="MM/YY">
+                </div>
+
+                <input type="submit" value="Checkout">
+            </div>
+        </div>
+
+        <!-- Available Products Section (Hidden initially) -->
+        <div class="form-section" id="available-products-section" style="display:none;">
+            <h2>Available Products</h2>
+            <ul id="available-products-list">
+                <!-- Available products will be displayed here -->
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="scripts.js"></script> <!-- Link to JS -->
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
